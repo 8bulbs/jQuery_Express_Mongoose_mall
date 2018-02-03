@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>购物车</title>
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<link rel="bookmark" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/header.css">
+	<link rel="stylesheet" href="stylesheets/footer.css">
+	<link rel="stylesheet" href="stylesheets/shoppingcart.css">
+</head>
+<body>
+	<header class="header"></header>
+	<section class="shoppingcart">
+		<table class="cart-table">
+			<thead>
+				<tr>
+					<th>
+						<span data-select="all"><img src="images/base_images/icon-check-ok.png" alt=""/>全选</span>
+					</th>
+					<th>
+						<span>商品型号</span>
+					</th>
+					<th>
+						<span>单价</span>
+					</th>
+					<th>
+						<span>数量</span>
+					</th>
+					<th>
+						<span>合计</span>
+					</th>
+					<th>
+						<span>操作</span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!--<tr>
+					<td>
+						<img src="images/base_images/icon-check-ok.png" alt=""/>
+					</td>
+					<td>
+						<a href="">
+							<img src="images/products_images/p/2017-08-10/NEW_XM/HD650_01.png" alt=""/>
+						</a>
+						<span>
+							<a href="">HD 650 开放式结构，带来绝佳的听音感受</a>
+						</span>
+					</td>
+					<td>
+						<span>¥2659.00</span>
+					</td>
+					<td>
+						<div class="add_minus">
+							<span class="minus">-</span>
+							<input value="1" type="text"/>
+							<span class="add">+</span>
+						</div>
+					</td>
+					<td>
+						<span>¥2,659.00</span>
+					</td>
+					<td>
+						<a href="">
+							<img src="images/base_images/icon-delete.png" alt=""/>
+							<span>删除</span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="images/base_images/icon-check-ok.png" alt=""/>
+					</td>
+					<td>
+						<a href="">
+							<img src="images/products_images/p/2017-08-10/NEW_XM/HD650_01.png" alt=""/>
+						</a>
+						<span>
+							<a href="">HD 650 开放式结构，带来绝佳的听音感受</a>
+						</span>
+					</td>
+					<td>
+						<span>¥2659.00</span>
+					</td>
+					<td>
+						<div class="add_minus">
+							<span class="minus">-</span>
+							<input value="1" type="text"/>
+							<span class="add">+</span>
+						</div>
+					</td>
+					<td>
+						<span>¥2,659.00</span>
+					</td>
+					<td>
+						<a href="">
+							<img src="images/base_images/icon-delete.png" alt=""/>
+							<span>删除</span>
+						</a>
+					</td>
+				</tr>-->
+			</tbody>
+		</table>
+		<div class="total-box">
+			<div>
+				<div class="total-box-left">
+					<span data-select="all"><img src="images/base_images/icon-check-ok.png" alt=""/>全选</span>
+					<span data-delete="some">批量删除</span>
+					<span data-delete="all">清空购物车</span>
+				</div>
+				<div class="total-box-right">
+					<span>商品金额</span>
+					<span>¥</span>
+					<span></span>
+					<span>确认结算</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer"></footer>
+	<script src="javascripts/jquery-3.2.1.min.js"></script>
+	<script src="javascripts/header.js"></script>
+	<script src="javascripts/footer.js"></script>
+	<script src="javascripts/shoppingcart.js"></script>
+</body>
+</html>

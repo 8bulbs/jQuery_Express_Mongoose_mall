@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>商品列表</title>
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<link rel="bookmark" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/header.css">
+	<link rel="stylesheet" href="stylesheets/footer.css">
+	<link rel="stylesheet" href="stylesheets/list.css">
+</head>
+<body>
+	<header class="header"></header>
+	<section class="banner">
+		<img src="images/base_images/banner.jpg" alt=""/>
+		<div class="blocks">
+			<div class="lgdiv"></div>
+			<div class="mddiv"></div>
+			<div class="smdiv"></div>
+		</div>
+	</section>
+	<section class="list">
+	<div class="list-sort">
+		<div class="show-all">
+			<span data-select="show-all">查看全部<img src="images/base_images/icon-btn-arrow-more.png"></span>
+			<!--<span>佩戴方式:头戴式<b>x</b></span>-->
+			<span>共<span data-count="number"> </span>件相关商品</span>
+		</div>
+		<div class="sort">
+			<div data-sort="connection" data-sort-text="连接方式">
+				<div class="sort-title">
+					<span>连接方式</span>
+				</div>
+				<div class="sort-item" data-select="connection">
+					<span>蓝牙<b>x</b></span>
+					<span>有线通用接口<b>x</b></span>
+					<span>有线苹果接口<b>x</b></span>
+				</div>
+				<div class="sort-multiple">
+					<span>+</span><span>多选</span>
+				</div>
+				<div class="confirm">
+					<span class="ok">确定</span><span class="cancel">取消</span>
+				</div>
+			</div>
+			<div data-sort="wear" data-sort-text="佩戴方式">
+				<div class="sort-title">
+					<span>佩戴方式</span>
+				</div>
+				<div class="sort-item" data-select="wear">
+					<span>头戴式<b>x</b></span>
+					<span>入耳式<b>x</b></span>
+					<span>耳塞式<b>x</b></span>
+				</div>
+				<div class="sort-multiple">
+					<span>+</span><span>多选</span>
+				</div>
+				<div class="confirm">
+					<span class="ok">确定</span><span class="cancel">取消</span>
+				</div>
+			</div>
+			<div data-sort="color" data-sort-text="产品颜色">
+				<div class="sort-title">
+					<span>产品颜色</span>
+				</div>
+				<div class="sort-item" data-select="color">
+					<span>黑色<b>x</b></span>
+					<span>红色<b>x</b></span>
+					<span>白色<b>x</b></span>
+					<span>蓝色<b>x</b></span>
+				</div>
+				<div class="sort-multiple">
+					<span>+</span><span>多选</span>
+				</div>
+				<div class="confirm">
+					<span class="ok">确定</span><span class="cancel">取消</span>
+				</div>
+			</div>
+			<div data-sort="microphone" data-sort-text="通讯配置">
+				<div class="sort-title">
+					<span>通讯配置</span>
+				</div>
+				<div class="sort-item" data-select="microphone">
+					<span>带麦克风<b>x</b></span>
+					<span>无麦克风<b>x</b></span>
+				</div>
+				<div class="sort-multiple">
+					<span>+</span><span>多选</span>
+				</div>
+				<div class="confirm">
+					<span class="ok">确定</span><span class="cancel">取消</span>
+				</div>
+			</div>
+			<div data-sort="foldable" data-sort-text="便携设计">
+				<div class="sort-title">
+					<span>便携设计</span>
+				</div>
+				<div class="sort-item" data-select="foldable">
+					<span>可折叠<b>x</b></span>
+					<span>非折叠<b>x</b></span>
+				</div>
+				<div class="sort-multiple">
+					<span>+</span><span>多选</span>
+				</div>
+				<div class="confirm">
+					<span class="ok">确定</span><span class="cancel">取消</span>
+				</div>
+			</div>
+			<div data-sort="priceRange" data-sort-text="价格区间">
+				<div class="sort-title">
+					<span>价格区间</span>
+				</div>
+				<div class="sort-item" data-select="priceRange">
+					<span>0-500<b>x</b></span>
+					<span>500-1000<b>x</b></span>
+					<span>1000-2000<b>x</b></span>
+					<span>2000-3000<b>x</b></span>
+					<span>3000以上<b>x</b></span>
+				</div>
+				<div class="sort-multiple">
+					<span>+</span><span>多选</span>
+				</div>
+				<div class="confirm">
+					<span class="ok">确定</span><span class="cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<p></p>
+	</div>
+	<div class="sort-bottom">
+		<span data-sort="default">默认</span>
+		<span data-sort="saleCount"><span class="sort-bottom-item">销量</span><span class="asc-desc"><span class="desc"></span><span class="asc"></span></span></span>
+		<span data-sort="price"><span class="sort-bottom-item">价格</span><span class="asc-desc"><span class="desc"></span><span class="asc"></span></span></span>
+	</div>
+	<div class="goods-list">
+		<ul>
+			<!--<li>
+				<a href="">
+					<img src="images/products_images/p/2017-08-24/NEW_XM/MOMENTUM-On-Ear-Wireless-Ivory-M2.png" alt=""/>
+					<p>MOMENTUM On-Ear Wireless Ivory  (M2 OEBT Ivory) 新品无线蓝牙降噪耳机</p>
+					<p><span class="rmb">¥</span><span class="price">1,999</span></p>
+					<p><span>月销量</span><span>${data.saleCount}件</span></p>
+					<p><img src="images/base_images/icon-cart-list.png" alt=""/><span>加入购物车</span></p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/products_images/p/2017-08-24/NEW_XM/MOMENTUM-On-Ear-Wireless-Ivory-M2.png" alt=""/>
+					<p>MOMENTUM On-Ear Wireless Ivory  (M2 OEBT Ivory) 新品无线蓝牙降噪耳机</p>
+					<p><span class="rmb">¥</span><span class="price">1,999</span></p>
+					<p><img src="images/base_images/icon-cart-list.png" alt=""/><span>加入购物车</span></p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/products_images/p/2017-08-24/NEW_XM/MOMENTUM-On-Ear-Wireless-Ivory-M2.png" alt=""/>
+					<p>MOMENTUM On-Ear Wireless Ivory  (M2 OEBT Ivory) 新品无线蓝牙降噪耳机</p>
+					<p><span class="rmb">¥</span><span class="price">1,999</span></p>
+					<p><img src="images/base_images/icon-cart-list.png" alt=""/><span>加入购物车</span></p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/products_images/p/2017-08-24/NEW_XM/MOMENTUM-On-Ear-Wireless-Ivory-M2.png" alt=""/>
+					<p>MOMENTUM On-Ear Wireless Ivory  (M2 OEBT Ivory) 新品无线蓝牙降噪耳机</p>
+					<p><span class="rmb">¥</span><span class="price">1,999</span></p>
+					<p><img src="images/base_images/icon-cart-list.png" alt=""/><span>加入购物车</span></p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/products_images/p/2017-08-24/NEW_XM/MOMENTUM-On-Ear-Wireless-Ivory-M2.png" alt=""/>
+					<p>MOMENTUM On-Ear Wireless Ivory  (M2 OEBT Ivory) 新品无线蓝牙降噪耳机</p>
+					<p><span class="rmb">¥</span><span class="price">1,999</span></p>
+					<p><img src="images/base_images/icon-cart-list.png" alt=""/><span>加入购物车</span></p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/products_images/p/2017-08-24/NEW_XM/MOMENTUM-On-Ear-Wireless-Ivory-M2.png" alt=""/>
+					<p>MOMENTUM On-Ear Wireless Ivory  (M2 OEBT Ivory) 新品无线蓝牙降噪耳机</p>
+					<p><span class="rmb">¥</span><span class="price">1,999</span></p>
+					<p><img src="images/base_images/icon-cart-list.png" alt=""/><span>加入购物车</span></p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/products_images/p/2017-08-24/NEW_XM/MOMENTUM-On-Ear-Wireless-Ivory-M2.png" alt=""/>
+					<p>MOMENTUM On-Ear Wireless Ivory  (M2 OEBT Ivory) 新品无线蓝牙降噪耳机</p>
+					<p><span class="rmb">¥</span><span class="price">1,999</span></p>
+					<p><img src="images/base_images/icon-cart-list.png" alt=""/><span>加入购物车</span></p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/products_images/p/2017-08-24/NEW_XM/MOMENTUM-On-Ear-Wireless-Ivory-M2.png" alt=""/>
+					<p>MOMENTUM On-Ear Wireless Ivory  (M2 OEBT Ivory) 新品无线蓝牙降噪耳机</p>
+					<p><span class="rmb">¥</span><span class="price">1,999</span></p>
+					<p><img src="images/base_images/icon-cart-list.png" alt=""/><span>加入购物车</span></p>
+				</a>
+			</li>-->
+		</ul>
+	</div>
+	<div class="page">
+		<div class="page-container">
+			<!--<a class="prev disabled" href="javascript:"><<上一页</a>-->
+			<!--<a class="current-page" href="javascript:">1</a>-->
+			<!--<a href="javascript:" class="">2</a>-->
+			<!--<a href="javascript:" class="">3</a>-->
+			<!--<a href="javascript:" class="">4</a>-->
+			<!--<a href="javascript:" class="">5</a>-->
+			<!--<a class="next" href="javascript:">下一页>></a>-->
+		</div>
+	</div>
+	</section>
+	<footer class="footer"></footer>
+	<script src="javascripts/jquery-3.2.1.min.js"></script>
+	<script src="javascripts/header.js"></script>
+	<script src="javascripts/footer.js"></script>
+	<script src="javascripts/list.js"></script>
+</body>
+</html>
